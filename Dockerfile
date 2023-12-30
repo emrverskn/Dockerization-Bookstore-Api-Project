@@ -1,9 +1,8 @@
 FROM python:alpine
-RUN apk update
 RUN apk add --no-cache gcc musl-dev libffi-dev openssl-dev && \
     pip install --upgrade pip && \
     pip install cryptography
-WORKDIR docker-deneme
+WORKDIR /docker-deneme
 COPY bookstore-api.py .
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt

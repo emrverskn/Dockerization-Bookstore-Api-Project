@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD: M123456o
+      - MYSQL_DATABASE: bookstore_db
+      - MYSQL_USER: merve
+      - MYSQL_PASSWORD: mrv&1
+    networks:
+      - mynetwork
+
+
+  mybookstore:
+    image: emrverskn/bookstore-api:latest
+    container_name: mybookstore
+    restart: always
+    depends_on:
+      - database
+    networks:
+      - mynetwork
+    ports:
+      - "80:80"
+
+
+networks:
+  mynetwork:
+    driver: bridge

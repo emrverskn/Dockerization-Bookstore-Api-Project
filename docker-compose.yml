@@ -4,10 +4,10 @@ services:
   database:
     image: mysql:8.0
     environment:
-      - MYSQL_ROOT_PASSWORD: M123456o
+      - MYSQL_ROOT_PASSWORD: ****
       - MYSQL_DATABASE: bookstore_db
-      - MYSQL_USER: merve
-      - MYSQL_PASSWORD: mrv&1
+      - MYSQL_USER: admin
+      - MYSQL_PASSWORD: ****
     networks:
       - mynetwork
 

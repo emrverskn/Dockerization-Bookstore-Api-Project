@@ -1,5 +1,5 @@
 variable "key" {
-  default = "mykey"
+  default = "****"
 }
 
 variable "instance_type" {

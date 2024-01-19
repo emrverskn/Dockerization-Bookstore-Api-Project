@@ -59,7 +59,6 @@ def find_book(id):
 
  
 
-
 def insert_book(title, author):
     insert = f"""
     INSERT INTO books (title, author)

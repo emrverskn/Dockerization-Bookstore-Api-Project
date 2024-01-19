@@ -56,9 +56,6 @@ def find_book(id):
         book = {'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])}
     return book
 
-
- 
-
 def insert_book(title, author):
     insert = f"""
     INSERT INTO books (title, author)

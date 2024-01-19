@@ -59,7 +59,7 @@ def find_book(id):
 
  
 
-# `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
+
 def insert_book(title, author):
     insert = f"""
     INSERT INTO books (title, author)

@@ -58,7 +58,7 @@ def find_book(id):
 
 
  
-# and return the newly added book as dictionary
+
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def insert_book(title, author):
     insert = f"""

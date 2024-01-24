@@ -72,7 +72,6 @@ def insert_book(title, author):
     return {'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])}
 
 
-
 def change_book(book):
     update = f"""
     UPDATE books

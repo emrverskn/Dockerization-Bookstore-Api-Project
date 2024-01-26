@@ -102,7 +102,7 @@ def remove_book(book):
 
 
 
-# and assign to the static route of ('/')
+
 @app.route('/')
 def home():
     return "Welcome to Merve's Bookstore API Service"

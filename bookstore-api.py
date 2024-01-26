@@ -87,7 +87,6 @@ def change_book(book):
     return {'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])}
 
 
-
 def remove_book(book):
     delete = f"""
     DELETE FROM books

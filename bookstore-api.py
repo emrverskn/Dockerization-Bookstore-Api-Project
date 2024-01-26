@@ -102,7 +102,6 @@ def remove_book(book):
 
 
 
-
 @app.route('/')
 def home():
     return "Welcome to Merve's Bookstore API Service"

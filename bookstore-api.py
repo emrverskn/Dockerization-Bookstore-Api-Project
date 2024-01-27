@@ -107,7 +107,7 @@ def home():
     return "Welcome to Merve's Bookstore API Service"
 
 
-# and assign to the static route of ('/books')
+
 @app.route('/books', methods=['GET'])
 def get_books():
     return jsonify({'books':get_all_books()})
